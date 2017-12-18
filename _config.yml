@@ -4,7 +4,7 @@ SEOTitle: 李孜锐的博客 | Lizirui's Blog
 header-img: img/post-bg-desk.jpg
 email: ruirui1990903@qq.com
 description: "Talk is cheap. Show me the code."
-keyword: "Lizirui, Lizirui's Blog, 李孜锐的博客, 李孜锐, HTML, CSS, JavaScript, Node, HTML5, CSS3, React, express"
+keyword: "Lizirui, Lizirui's Blog, 李孜锐的博客, 李孜锐, HTML, CSS, JavaScript, Node, HTML5, CSS3, React, express, leetcode, 算法"
 url: "https://lizirui.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Lizirui/lizirui.github.io.git" # you code repository
@@ -60,7 +60,7 @@ disqus_username: lizirui
 
 # 多说 将于2017年6月1日正式关停服务，建议使用 Disqus（http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241）
 # Duoshuo settings
-# duoshuo_username: qiubaiying
+# duoshuo_username: lizirui
 # Share component is depend on Comment so we can NOT use share only.
 # duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
