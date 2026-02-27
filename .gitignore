@@ -1,0 +1,18 @@
+# Jekyll 构建输出
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# Bundler
+vendor/
+.bundle/
+
+# 环境与编辑器
+.env
+.env.local
+*.swp
+*.swo
+.DS_Store
+
+# GitHub 官方建议忽略 Gemfile.lock 以避免与 GitHub Pages 构建环境版本冲突
+Gemfile.lock

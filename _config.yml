@@ -1,0 +1,25 @@
+# Jekyll 博客配置 - lizirui.github.io
+# 详见 https://jekyllrb.com/docs/configuration/
+
+# 站点设置
+title: 我的博客
+email: your-email@example.com
+description: 用 Markdown 编写的个人博客，基于 Jekyll 与 GitHub Pages
+baseurl: ""  # 用户站点必须为空
+url: "https://lizirui.github.io"
+twitter_username:
+github_username: Lizirui
+
+# 构建设置
+theme: minima
+plugins:
+  - jekyll-feed
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
