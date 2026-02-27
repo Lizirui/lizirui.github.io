@@ -1,0 +1,262 @@
+/* 极简风格 - 自定义样式 */
+
+:root {
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #fafafa;
+  --color-border: #e8e8e8;
+  --color-accent: #1a1a1a;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
+  --max-width: 680px;
+  --spacing: 1.5rem;
+}
+
+/* 基础 */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 页面容器 */
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+/* 页头 - 极简 */
+.site-header {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing) 0;
+  margin-bottom: 3rem;
+}
+
+.site-title {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  opacity: 0.7;
+}
+
+/* 导航 */
+.site-nav {
+  margin-top: 0.5rem;
+}
+
+.site-nav .page-link {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.site-nav .page-link:hover {
+  color: var(--color-text);
+}
+
+/* 首页 - 文章列表 */
+.home {
+  padding-bottom: 3rem;
+}
+
+.post-list-heading {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list > li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-list > li:first-child {
+  padding-top: 0;
+}
+
+.post-link {
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.post-link:hover {
+  opacity: 0.7;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+/* 文章页 */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.post-content {
+  margin-top: 2rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-content a:hover {
+  opacity: 0.7;
+}
+
+.post-content code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: #f0f0f0;
+  padding: 0.15em 0.4em;
+  border-radius: 2px;
+}
+
+.post-content pre {
+  background: #f8f8f8;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 关于页 */
+.page-content {
+  padding: 2rem 0;
+}
+
+.page-content h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.page-content p,
+.page-content ul {
+  margin-bottom: 1rem;
+}
+
+.page-content a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* 页脚 */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing) 0;
+  margin-top: 3rem;
+}
+
+.site-footer .footer-heading {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.site-footer .footer-col-wrapper {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-text);
+}
+
+/* 移除多余装饰 */
+.site-header .wrapper,
+.site-footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 响应式 */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
+  }
+
+  .post-title {
+    font-size: 1.25rem;
+  }
+}
