@@ -11,6 +11,8 @@ plugins:
 title: Lizirui's Blog
 email: ruirui1990104@gmail.com
 description: 用 Markdown 编写的个人博客，基于 Jekyll 与 GitHub Pages
+header_pages:
+  - about.md
 baseurl: "" # 用户站点必须为空
 url: "https://lizirui.github.io"
 

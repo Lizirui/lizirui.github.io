@@ -29,12 +29,23 @@ body {
   padding: 0 var(--spacing);
 }
 
-/* 页头 - 极简 */
+/* 页头 - 极简，标题与导航居中，导航在右侧 */
 .site-header {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   padding: var(--spacing) 0;
   margin-bottom: 3rem;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-wrapper .site-nav {
+  margin-top: 0;
 }
 
 .site-title {
@@ -58,6 +69,11 @@ body {
   margin-top: 0.5rem;
 }
 
+.site-nav .trigger {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .site-nav .page-link {
   color: var(--color-text-muted);
   font-size: 0.9rem;
@@ -74,13 +90,9 @@ body {
   padding-bottom: 3rem;
 }
 
+/* 隐藏 Posts 标题 */
 .post-list-heading {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
+  display: none;
 }
 
 .post-list {
@@ -224,8 +236,21 @@ body {
 }
 
 .site-footer .footer-col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   font-size: 0.85rem;
   color: var(--color-text-muted);
+}
+
+.site-footer .footer-col {
+  flex: 0 0 auto;
+}
+
+.site-footer .rss-subscribe {
+  margin: 0;
 }
 
 .site-footer a {
@@ -237,13 +262,9 @@ body {
   color: var(--color-text);
 }
 
-/* 移除多余装饰 */
-.site-header .wrapper,
+/* 页脚布局 */
 .site-footer .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
 }
 
 /* 响应式 */
