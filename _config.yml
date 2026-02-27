@@ -1,6 +1,12 @@
 # Jekyll 博客配置 - lizirui.github.io
 # 详见 https://jekyllrb.com/docs/configuration/
 
+# 主题与插件（GitHub Pages 构建必需）
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 # 站点设置
 title: Lizirui's Blog
 email: ruirui1990104@gmail.com
